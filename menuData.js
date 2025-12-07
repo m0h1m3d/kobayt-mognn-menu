@@ -1,4 +1,4 @@
-export const menu = [
+const menu = [
   {
     category: "Hot Drinks",
     items: [
@@ -83,3 +83,6 @@ export const menu = [
     ],
   },
 ];
+
+
+export default menu;

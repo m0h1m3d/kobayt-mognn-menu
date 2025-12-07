@@ -1,0 +1,22 @@
+.card {
+  color: #618283;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.5rem;
+  padding: 30px;
+
+  h1 {
+    color: #bbab35;
+    // align-self: flex-start;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 20px;
+
+      img{
+        align-self: center;
+        border-radius: 10px;
+        height: 50px;
+      }
+  }
+}

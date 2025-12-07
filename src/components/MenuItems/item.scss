@@ -1,0 +1,22 @@
+.item {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #337687;
+  color: #eceff0;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+@media (max-width: 755px){
+    .item{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}

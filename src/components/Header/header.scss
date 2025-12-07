@@ -39,13 +39,21 @@
   }
 }
 
+@media (max-width: 966px){
+  .header{
+        h2{
+            width: 50%;
+        }
+    }
+}
+
 @media (max-width: 768px){
     .header{
         h2{
             width: 50%;
 
             &::before, &::after{
-                width: 25%;
+                width: 15%;
             }
         }
     }
