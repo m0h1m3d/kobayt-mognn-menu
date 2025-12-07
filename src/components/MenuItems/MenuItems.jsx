@@ -9,7 +9,7 @@ function MenuItems({item}) {
         <div className='card'>
             <h1>
                 
-                <img src={`./public/${
+                <img src={`/${
                     category.includes('Hot') ? 'hot'
                     :
                     category.includes('Iced')?
