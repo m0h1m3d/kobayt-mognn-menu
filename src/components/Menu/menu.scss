@@ -1,5 +1,8 @@
 .menu-container {
+  height: 80%;
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   // height: 80%;
 }
@@ -10,7 +13,7 @@
   height: 10%;
   display: flex;
   justify-content: space-around;
-  gap: 5px;
+  gap: 6px;
   align-items: center;
   flex-wrap: wrap;
 
@@ -18,24 +21,28 @@
     padding: 0.8rem 1rem;
     border-radius: 20px;
     border: none;
-    background-color: #337687;
-    color: #e9d241;
+    // background-color: #337687;
+    background-color: #222e3a;
+    // color: #e9d241;
+    color: #ffff;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s;
   }
 }
 
-.links button.active{
+.links button.active {
   transform: translateY(-4px);
 }
 
 .menu {
+  height: 80%;
   width: 100%;
+  // height: auto;
   // height: 80vh;
-  overflow: auto;
+  // overflow: auto;
   display: flex;
-  //   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
 }
 

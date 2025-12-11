@@ -82,6 +82,20 @@ const menu = [
       { name: "موهيتو مانجو", price: 6000 },
     ],
   },
+  {
+    category: "Bosh Point Grills",
+    items: [
+      { name: "شغف مقنن (الأكثر مبيعاً)", price: 6500 },
+      { name: "كيوي", price: 6000 },
+      { name: "أناناس", price: 6000 },
+      { name: "فراولة", price: 6000 },
+      { name: "بلوبيري", price: 6000 },
+      { name: "كرز", price: 6000 },
+      { name: "ميكس", price: 6500 },
+      { name: "موهيتو روز", price: 6000 },
+      { name: "موهيتو مانجو", price: 6000 },
+    ],
+  },
 ];
 
 

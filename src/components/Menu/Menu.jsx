@@ -68,6 +68,13 @@ function Menu() {
           title={"Mojito"}
           setFiltered={setFiltered}
         />
+        <Button
+          active={active}
+          setActive={setActive}
+          value={"Bosh Point Grills"}
+          title={"Bosh Point Grills"}
+          setFiltered={setFiltered}
+        />
       </nav>
 
       <div className="menu">

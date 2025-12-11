@@ -1,5 +1,6 @@
 .header {
-  color: #3d747f;
+  // color: #3d747f;
+  color: #ffff;
   height: 20vh;
   display: flex;
   justify-content: space-around;
@@ -20,23 +21,23 @@
     text-align: center;
   }
 
-  h2::before, h2::after{
-    content: '';
-    width: 35%;
-    height: 3px;
-    background-color: #3d747f;
-    position: absolute;
-    top: 50%;
-    border-radius: 10px;
-  }
+  // h2::before, h2::after{
+  //   content: '';
+  //   width: 35%;
+  //   height: 3px;
+  //   background-color: #3d747f;
+  //   position: absolute;
+  //   top: 50%;
+  //   border-radius: 10px;
+  // }
   
-  h2::before{
-    left: 0;
-  }
+  // h2::before{
+  //   left: 0;
+  // }
 
-  h2::after{
-    right: 0;
-  }
+  // h2::after{
+  //   right: 0;
+  // }
 }
 
 @media (max-width: 966px){
@@ -52,9 +53,9 @@
         h2{
             width: 50%;
 
-            &::before, &::after{
-                width: 15%;
-            }
+            // &::before, &::after{
+            //     width: 15%;
+            // }
         }
     }
 }
