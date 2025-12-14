@@ -62,17 +62,19 @@
 
       .pic{
         left: -5%;
+        height: 80%;
+        width: 40%;
+
+        // img{
+        //   height: 120px;
+        //   // height: 100%;
+        // }
       }
 
       .details{
         width: 100%;
         font-size: 0.6rem;
         padding-left: 120px;
-      }
-
-      .pic{
-        height: 80%;
-        width: 40%;
       }
     }
   }

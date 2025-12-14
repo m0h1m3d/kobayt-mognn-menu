@@ -69,7 +69,7 @@ function MenuItems({ item }) {
       </h1>
 
       {items.map((item) => (
-        <Item key={item.name} name={item.name} price={item.price} />
+        <Item key={item.name} name={item.name} price={item.price} img={item.img} />
       ))}
     </div>
   );

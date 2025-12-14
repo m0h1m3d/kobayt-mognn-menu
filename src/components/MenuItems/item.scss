@@ -20,10 +20,18 @@
   .pic{
     position: absolute;
     left: -10%;
-    width: 35%;
+    width: 30%;
     height: 90%;
     border-radius: 20px;
     border: 1px solid #F2D482;
+
+    img{
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      object-position:bottom;
+    }
   }
 
   .details{
