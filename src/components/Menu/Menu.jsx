@@ -23,56 +23,54 @@ function Menu() {
           active={active}
           setActive={setActive}
           value={"All"}
-          title={"All"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
           value={"Hot Drinks"}
-          title={"Hot Drinks"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
           value={"Iced Drinks"}
-          title={"Iced Drinks"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
           value={"Zalabia & Pastries"}
-          title={"Zalabia & Pastries"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
           value={"Slush"}
-          title={"Slush"}
           setFiltered={setFiltered}
         />
+        {/* <Button
+          active={active}
+          setActive={setActive}
+          value={"Milk Shake"}
+          setFiltered={setFiltered}
+        /> */}
         <Button
           active={active}
           setActive={setActive}
-          value={"Milkshake"}
-          title={"Milkshake"}
+          value={"Winter Drinks"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
           value={"Mojito"}
-          title={"Mojito"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
           value={"Bosh Point Grills"}
-          title={"Bosh Point Grills"}
           setFiltered={setFiltered}
         />
       </nav>

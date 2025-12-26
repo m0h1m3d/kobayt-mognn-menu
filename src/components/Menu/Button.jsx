@@ -1,4 +1,4 @@
-function Button({ title, value, setFiltered, active, setActive }) {
+function Button({ value, setFiltered, active, setActive }) {
   function handleClick(e) {
     setActive(e.currentTarget.value);
     setFiltered(e.target.value);
@@ -10,7 +10,7 @@ function Button({ title, value, setFiltered, active, setActive }) {
       value={value}
       onClick={(e) => handleClick(e)}
     >
-      {title}
+      {value}
     </button>
   );
 }
