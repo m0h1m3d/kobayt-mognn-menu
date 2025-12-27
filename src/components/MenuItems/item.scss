@@ -40,6 +40,18 @@
     display: flex;
     flex-direction: column;
     // color: #031F3A;
+
+    h2{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span{
+        font-style: italic;
+        font-size: 80%;
+        color: #8a95a0;
+      }
+    }
   }
 }
 
