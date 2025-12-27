@@ -2,6 +2,7 @@ import "./item.scss";
 
 function Item({ price, name, img }) {
   return (
+      <>
     <div className="item">
       <div className="pic">
         <img src={`${img}`} alt="menu-img" />
@@ -11,6 +12,7 @@ function Item({ price, name, img }) {
         <h2>{price}</h2>
       </div>
     </div>
+    </>
   );
 }
 

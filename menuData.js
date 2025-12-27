@@ -1,6 +1,7 @@
 const menu = [
   {
-    category: "Hot Drinks",
+    // category: "Hot Drinks",
+    category: "المشروبات الساخنة",
     items: [
       { name: "شاي مقنن", price: 4500, img: "/items/mognn.jpg" },
       { name: "شاي بدره", price: 4000, img: "/items/milktea.jpg" },
@@ -9,18 +10,19 @@ const menu = [
       // { name: "هوت شوكليت", price: 7000, img: '/items/hotchoclate.jpg' },
       { name: "أوفلتين", price: 7200, img: "/items/ofletin.jpg" },
       { name: "نسكافيه", price: 7700, img: "/items/nescafe.jpg" },
+      { name: "نسكافيه زيرو سكر", price: 8000 },
       { name: "شاي أحمر", price: 2500, img: "/items/redtea.jpg" },
       { name: "شاي أخضر", price: 2500, img: "/items/greentea.jpg" },
       { name: "نعناع", price: 2000, img: "/items/mint.jpg" },
       { name: "زنجبيل", price: 2000, img: "/items/ginger.jpg" },
-      { name: "بن الحموي صغير", price: 4500 },
-      { name: "بن الحموي كبير", price: 5500 },
-      { name: "نسكافيه زيرو سكر", price: 5500 },
-      { name: "قهوة بالبندق", price: "Coming Soon.." },
+      { name: "بن الحموي صغير", price: 4500, img: "/items/coffee.jpg" },
+      { name: "بن الحموي كبير", price: 5500, img: "/items/coffee.jpg" },
+      { name: "قهوة بالبندق", price: "Coming Soon..",img: "/items/soon.jpg"  },
     ],
   },
   {
-    category: "Iced Drinks",
+    // category: "Iced Drinks",
+    category: "المشروبات المثلجة",
     items: [
       {
         name: "سبانيش لاتيه (الأكثر مبيعاً)",
@@ -32,13 +34,14 @@ const menu = [
       { name: "أيس كوفي كراميل", price: 8700, img: "/items/icecaramel.jpg" },
       { name: "أيس كوفي أوريو", price: 8700, img: "/items/iceoreo.jpg" },
       // { name: "كيان مقنن", price: 9000 },
-      { name: "أيس تي", price: 7500, img: "/items/icetea.jpg" },
       { name: "أيس أوفلتين", price: 8700, img: "/items/iceofletin.jpg" },
       { name: "أيس بيور", price: 8700 },
+      { name: "أيس تي", price: 6000, img: "/items/icetea.jpg" },
     ],
   },
   {
-    category: "Zalabia & Pastries",
+    // category: "Zalabia & Pastries",
+    category: "الزلابية والمعجنات",
     items: [
       { name: "صغيرة سادة", price: 4500, img: "/items/zalabia.jpg" },
       { name: "صغيرة صوصات", price: 5700, img: "/items/zalabiasauce.jpg" },
@@ -47,22 +50,23 @@ const menu = [
       { name: "كبيرة سادة", price: 9500, img: "/items/zalabia.jpg" },
       { name: "كبيرة صوصات", price: 11000, img: "/items/zalabiasauce.jpg" },
       {
-        name: "بسكويت يانسون (ثلاث قطع)",
+        name: "بسكويت يانسون (3 قطع)",
         price: 3000,
         img: "/items/yansonbiscuit.jpg",
       },
-      { name: "بسكويت خبيز (أربع قطع)", price: 3000 },
-      { name: "إنجلش كيك", price: 4500 },
+      { name: "بسكويت خبيز (4 قطع)", price: 3000 },
+      { name: "كيك إنجليزي", price: 4500 },
       // { name: "إضافة سكر", price: 1500 },
       { name: "إضافة عسل", price: 1500, img: "/items/honey.jpg" },
     ],
   },
   {
-    category: "Slush",
+    // category: "Slush",
+    category: "سلاش",
     items: [
-      { name: "شغف مقنن (الأكثر مبيعاً)", price: 7500 },
-      { name: "كيوي", price: 7000, img: "/items/slushkiwi.jpg" },
-      { name: "باشن", price: 7000, img: "/items/slushpin.jpg" },
+      // { name: "شغف مقنن (الأكثر مبيعاً)", price: 7500 },
+      { name: "كيوي", price: 7500, img: "/items/slushkiwi.jpg" },
+      { name: "أناناس", price: 7000, img: "/items/slushpin.jpg" },
       { name: "فراولة", price: 7000, img: "/items/slushstrawb.jpg" },
       { name: "بلوبيري", price: 7000, img: "/items/slushblue.jpg" },
       // { name: "كرز", price: 7000 },
@@ -73,6 +77,7 @@ const menu = [
     ],
   },
   // { category: "Milk Shake",
+  //    category: "ميلك شيك",
   //    items: [{
   //     name: "ميلك شيك أوريو", price: 8500, img: "/items/milkshakeoreo.jpg"
   //   },
@@ -80,26 +85,37 @@ const menu = [
   //   { name: "ميلك شيك كراميل", price: 8500, img: "/items/milkshakecaram.jpg"
   // }] },
   {
-    category: "Winter Drinks",
-    items: [
-      { name: "شوفان بالشوكلت", price: 8500, img: "/items/oatschoclate.jpg" },
-      { name: "شوفان بالماتشا", price: 8500, img: "/items/oatsmatcha.jpg" },
-      { name: "شوفان بالفانيليا", price: 8500, img: "/items/oatsvanil.jpg" },
-      { name: "شوفان بالموكا", price: 8500, img: "/items/oatsmocha.jpg" },
-      { name: "شوفان بالبيري", price: 8500, img: "/items/oatsberry.jpg" },
-      { name: "هوت شوكلت كادبوري", price: 8500 },
-      { name: "هوت شوكلت كت كات", price: 8500 },
+    // category: "Winter Drinks",
+    category: "مشروبات الشتاء",
+    subsections: [
+      {
+        title: "شوفان",
+        items: [
+      { name: "ماتشا", price: 8700, img: "/items/oatsmatcha.jpg" },
+      { name: "شوكلت", price: 8500, img: "/items/oatschoclate.jpg" },
+      { name: "بيري", price: 8500, img: "/items/oatsberry.jpg" },
+      { name: "موكا", price: 8500, img: "/items/oatsmocha.jpg" },
+      { name: "فانيليا", price: 8500, img: "/items/oatsvanil.jpg" }
+        ]
+      },{
+        title: "هوت شوكلت",
+        items:[
+      { name: "كادبوري", price: 8500 },
+      { name: "كت كات", price: 8500 },
+        ]
+      }
     ],
   },
   {
-    category: "Mojito",
+    // category: "Mojito",
+    category: "موهيتو",
     items: [
-      {
-        name: "شغف مقنن (الأكثر مبيعاً)",
-        price: 6500,
-        img: "/items/mojitopassion.jpg",
-      },
-      { name: "كيوي", price: 6000, img: "/items/mojitokiwi.jpg" },
+      // {
+      //   name: "شغف مقنن (الأكثر مبيعاً)",
+      //   price: 6500,
+      //   img: "/items/mojitopassion.jpg",
+      // },
+      { name: "كيوي", price: 6500, img: "/items/mojitokiwi.jpg" },
       { name: "أناناس", price: 6000, img: "/items/mojitopin.jpg" },
       { name: "فراولة", price: 6000, img: "/items/mojitostrawb.jpg" },
       { name: "بلوبيري", price: 6000, img: "/items/mojitoblue.jpg" },
@@ -110,7 +126,8 @@ const menu = [
     ],
   },
   {
-    category: "Bosh Point Grills",
+    // category: "Bosh Point Grills",
+    category: "مشاوي بوش بوينت",
     items: [
       { name: "شغف مقنن (الأكثر مبيعاً)", price: 6500 },
       { name: "كيوي", price: 6000 },

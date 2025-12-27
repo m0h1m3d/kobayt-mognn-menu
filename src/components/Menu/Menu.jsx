@@ -23,54 +23,71 @@ function Menu() {
           active={active}
           setActive={setActive}
           value={"All"}
+          title={"All"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
-          value={"Hot Drinks"}
+          // value={"Hot Drinks"}
+          value={'المشروبات الساخنة'}
+          title={"Hot Drinks"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
-          value={"Iced Drinks"}
+          // value={"Iced Drinks"}
+          value={"المشروبات المثلجة"}
+          title={"Iced Drinks"}
+          setFiltered={setFiltered}
+        />
+          <Button
+            active={active}
+            setActive={setActive}
+            // value={"Mojito"}
+            value={"موهيتو"}
+            title={"Mojito"}
+            setFiltered={setFiltered}
+          />
+        <Button
+          active={active}
+          setActive={setActive}
+          // value={"Zalabia & Pastries"}
+          value={"الزلابية والمعجنات"}
+          title={"Zalabia & Pastries"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
-          value={"Zalabia & Pastries"}
-          setFiltered={setFiltered}
-        />
-        <Button
-          active={active}
-          setActive={setActive}
-          value={"Slush"}
+          // value={"Slush"}
+          value={"سلاش"}
+          title={"Slush"}
           setFiltered={setFiltered}
         />
         {/* <Button
           active={active}
           setActive={setActive}
           value={"Milk Shake"}
+          value={"ميلك شيك"}
+          title={"Milk Shake"}
           setFiltered={setFiltered}
         /> */}
         <Button
           active={active}
           setActive={setActive}
-          value={"Winter Drinks"}
+          // value={"Winter Drinks"}
+          value={"مشروبات الشتاء"}
+          title={"Winter Drinks"}
           setFiltered={setFiltered}
         />
         <Button
           active={active}
           setActive={setActive}
-          value={"Mojito"}
-          setFiltered={setFiltered}
-        />
-        <Button
-          active={active}
-          setActive={setActive}
-          value={"Bosh Point Grills"}
+          // value={"Bosh Point Grills"}
+          value={"مشاوي بوش بوينت"}
+          title={"Bosh Point Grills"}
           setFiltered={setFiltered}
         />
       </nav>

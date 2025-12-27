@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Item from "./Item";
 import "./menuitem.scss";
+import SubItem from "./SubItem";
 
 function MenuItems({ item }) {
   const { category, items } = item;
@@ -30,19 +31,34 @@ function MenuItems({ item }) {
       <h1>
         <img
           src={`/${
-            category.includes("Hot")
+            // category.includes("Hot")
+            //   ? "hot"
+            //   : category.includes("Iced")
+            //   ? "iced"
+            //   : category.includes("Zalabia & Pastries")
+            //   ? "zalabia"
+            //   : category.includes("Slush")
+            //   ? "slush"
+            //   : category.includes("Milkshake")
+            //   ? "shake"
+            //   : category.includes("Mojito")
+            //   ? "mojito"
+            //   : category.includes("Bosh Point Grills")
+            //   ? 'grill'
+            //   :''
+            category.includes("الساخنة")
               ? "hot"
-              : category.includes("Iced")
+              : category.includes("المثلجة")
               ? "iced"
-              : category.includes("Zalabia & Pastries")
+              : category.includes("الزلابية")
               ? "zalabia"
-              : category.includes("Slush")
+              : category.includes("سلاش")
               ? "slush"
-              : category.includes("Milkshake")
-              ? "shake"
-              : category.includes("Mojito")
+              : category.includes("الشتاء")
+              ? "winter"
+              : category.includes("موهيتو")
               ? "mojito"
-              : category.includes("Bosh Point Grills")
+              : category.includes("مشاوي")
               ? 'grill'
               :''
           }.jpg`}
@@ -68,9 +84,11 @@ function MenuItems({ item }) {
         {category}
       </h1>
 
-      {items.map((item) => (
+      {item.items && items.map((item) => (
         <Item key={item.name} name={item.name} price={item.price} img={item.img} />
       ))}
+
+      {item.subsections && item.subsections.map(sub => <SubItem key={sub.title} title={sub.title} data={sub.items} />)}
     </div>
   );
 }
