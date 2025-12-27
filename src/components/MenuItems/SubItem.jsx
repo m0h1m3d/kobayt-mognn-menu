@@ -8,8 +8,8 @@ function SubItem({title, data}) {
             </span>
             </h1>
         {data.map(item => {
-            const {name, price, img} = item;
-            return <Item key={name} name={name} price={price} img={img} />
+            const {name, nameEng, price, img} = item;
+            return <Item key={name} name={name} nameEng={nameEng} price={price} img={img} />
         })};
         </>
     )
