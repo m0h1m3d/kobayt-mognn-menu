@@ -85,7 +85,7 @@ function MenuItems({ item }) {
       </h1>
 
       {item.items && items.map((item) => (
-        <Item key={item.name} name={item.name} price={item.price} img={item.img} />
+        <Item key={item.name} name={item.name} price={item.price} nameEng={item.nameEng} img={item.img} />
       ))}
 
       {item.subsections && item.subsections.map(sub => <SubItem key={sub.title} title={sub.title} data={sub.items} />)}

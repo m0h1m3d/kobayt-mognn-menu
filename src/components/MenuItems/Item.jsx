@@ -1,7 +1,7 @@
 import "./item.scss";
 
-function Item({ price, name, img }) {
-  const formattedNane = name.split("(")[0].trim();
+function Item({ price, name, nameEng, img }) {
+  console.log(nameEng)
   return (
       <>
     <div className="item">
@@ -9,8 +9,9 @@ function Item({ price, name, img }) {
         <img src={`${img}`} alt="menu-img" />
       </div>
       <div className="details">
-        <h2>{name}
-          <span>{formattedNane}</span>
+        <h2>
+          {name}
+          <span>{nameEng}</span>
         </h2>
         <h2>{price}</h2>
       </div>
