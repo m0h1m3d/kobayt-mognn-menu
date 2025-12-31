@@ -9,13 +9,13 @@
   font-size: 0.5rem;
   padding: 30px;
   // border-radius: 10px;
-
+  
   .item {
     height: 150px;
     width: 40%;
     // color: #031F3A;
   }
-
+  
   .bg {
     position: absolute;
     left: 25.2%;
@@ -33,7 +33,8 @@
     font-size: 1.8rem;
     display: flex;
     gap: 20px;
-
+    font-family: 'Noto Nastaliq Urdu';
+    
     img {
       align-self: center;
       border-radius: 10px;
