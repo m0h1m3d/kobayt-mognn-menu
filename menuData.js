@@ -85,7 +85,7 @@ const menu = [
     category: "المشروبات المثلجة",
     items: [
       {
-        name: "سبانيش لاتيه (الأكثر مبيعاً)",
+        name: "سبانيش لاتيه",
         nameEng: "Spanish Latte",
         price: 10500,
         img: "/items/spanishlate.jpg",
@@ -348,7 +348,7 @@ const menu = [
     category: "مشاوي بوش بوينت",
     items: [
       {
-        name: "شغف مقنن (الأكثر مبيعاً)",
+        name: "شغف مقنن",
         nameEng: "Mognn Passion",
         price: 6500,
       },

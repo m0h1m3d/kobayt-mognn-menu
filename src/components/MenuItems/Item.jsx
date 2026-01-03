@@ -9,11 +9,11 @@ function Item({ price, name, nameEng, img }) {
         <img src={`${img}`} alt="menu-img" />
       </div>
       <div className="details">
-        <h2>
+        <h2 className={name.includes('بسكويت') ? 'bis-padd' :''} >
           {name}
           <span>{nameEng}</span>
         </h2>
-        <h2>{price}</h2>
+        <h2 className="price">{price}</h2>
       </div>
     </div>
     </>

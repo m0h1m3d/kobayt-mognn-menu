@@ -34,6 +34,7 @@
     display: flex;
     gap: 20px;
     font-family: 'Noto Nastaliq Urdu';
+    margin-bottom: 30px;
     
     img {
       align-self: center;
@@ -43,18 +44,75 @@
   }
 }
 
-@media (max-width: 678px) {
+
+@media (min-width: 678px )and (max-width: 974px) {
+  .card {
+    width: 90%;
+
+    .details{
+      width: 60%;
+    }
+
+    .item, .bg{
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 677px) {
+  .card {
+    width: 95%;
+    padding: 25px;
+
+    h1{
+      // width: 85%;
+      font-size: 1.7rem;
+      align-items: center;
+    }
+
+    .bg {
+      width: 70%;
+      left: 15%;
+    }
+    .item {
+      width: 70%;
+      font-size: 0.9rem;
+
+      .pic{
+        left: -1%;
+        height: 92%;
+        width: 30%;
+
+        img{
+          object-position: bottom;
+          height: 138px;
+        }
+      }
+
+      .details{
+        width: 100%;
+        font-size: 0.7rem;
+        text-align: center;
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
   .card {
     width: 90%;
     padding: 19px;
 
     h1{
-      width: 85%;
+      // width: 85%;
       font-size: 1.5rem;
       align-items: center;
     }
 
     .bg {
+      height: 98.5%;
       width: 83%;
       left: 2%;
     }
@@ -69,15 +127,17 @@
 
         img{
           height: 120px;
-          object-fit: cover;
           object-position: bottom;
         }
       }
 
       .details{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         font-size: 0.6rem;
-        padding-left: 120px;
+        text-align: center;
+        padding-left: 60px;
       }
     }
   }
