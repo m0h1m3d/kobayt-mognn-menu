@@ -70,7 +70,7 @@ const menu = [
         name: "بن الحموي كبير",
         nameEng: "Bon Alhamwi Large",
         price: 5500,
-        img: "/items/coffee.jpg",
+        img: "/items/largecoffee.jpg",
       },
       {
         name: "قهوة بالبندق",
