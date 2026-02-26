@@ -74,14 +74,14 @@ function Menu() {
           title={"Milk Shake"}
           setFiltered={setFiltered}
         /> */}
-        <Button
+        {/* <Button
           active={active}
           setActive={setActive}
           // value={"Winter Drinks"}
           value={"مشروبات الشتاء"}
           title={"Winter Drinks"}
           setFiltered={setFiltered}
-        />
+        /> */}
         <Button
           active={active}
           setActive={setActive}
